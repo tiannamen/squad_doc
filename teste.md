@@ -1,8 +1,8 @@
-# Table of Contents
+# Table of Contents (Índice)
 
 ## [1. Compromised AWS Account Credentials](#compromised-aws-account-credentials)
 
-## [2. Como fazer um novo Pix no iti](#como-fazer-um-novo-Pix-no-iti)
+## [2. Como fazer um novo Pix no iti](#como-fazer-um-novo-pix-no-iti)
 
 ### [2.1. Pré-requisitos](#pr%C3%A9-requisitos)
 
@@ -121,7 +121,7 @@ Este tutorial vai te guiar nos passos necessários para utilizar o ChatGPT via s
 
 ## Pré-requisitos
 
-* Python 3.8 ou acima - caso não possua, realize o [download no site python.org](https://www.python.org/downloads/release/python-3112/). Em caso de dúvidas, consulte a [documentação disponível](https://docs.python.org/).
+* Python 3.8 ou acima com o respectivo gerenciador de pacotes (pip) - caso não possua, realize o [download no site python.org](https://www.python.org/downloads/release/python-3112/). Em caso de dúvidas, consulte a [documentação disponível](https://docs.python.org/).
 * API Key do ChatGPT - crie sua API Key no [site da OpenAI](https://platform.openai.com/account/api-keys).
 
 ## Utilizando o script
@@ -131,9 +131,16 @@ Agora que você já possui o Python em versão 3.8 ou superior, é possível uti
 > Para testar o correto funcionamento do Python, execute o comando: ```python --version```. 
 Se a instalação foi bem sucedida, esse comando deverá retornar a versão do Python. 
 
-1. Abra o prompt de comando (CMD) do seu computador e execute o seguinte comando para instalar o gerenciador de pacotes do Python (pip):
+1. Abra o prompt de comando (CMD) do seu computador e execute o seguinte comando para instalar os pacotes necessários para a utilização do script:
 
-```winget install --id=lencx.ChatGPT -e```
+```pip install openai requests tqdm numpy```
+
+Para mais informações sobre os pacotes instalados, visite os respectivos links abaixo:
+
+* [openai](https://pypi.org/project/openai/)
+* [requests](https://pypi.org/project/requests/)
+* [tqdm](https://pypi.org/project/tqdm/)
+* [numpy](https://pypi.org/project/numpy/)
 
 2. Crie um novo arquivo com a extensão .py e cole o seguinte script:
 
@@ -154,7 +161,7 @@ while (True):
     print("ChatGPT: " + message + "\n")
  ```
 
-4. Substitua "API Key" pelas informações da sua API Key gerada no site da OpenAI [(veja os pré-requisitos)](#pré-requisitos);
+4. Substitua "API Key" pelas informações da sua API Key gerada no site da OpenAI [(veja os pré-requisitos)](#pr%C3%A9-requisitos-1);
 5. Salve o arquivo com o nome de sua escolha e com a extensão .py - exemplo (chatgpt.py);
 6. No seu terminal (git bash ou cmd), navegue até o local onde o arquivo foi salvo (utilize o comando `cd`) e execute o comando: ```python nome do arquivo.py``` - exemplo ```python chatgpt.py```. Ao executar esse comando, aparecerá a opção de digitar sua pergunta no próprio terminal, e a resposta aparecerá logo em seguida
 7. Pronto! Agora você pode utilizar as funcionalidades do ChatGPT, mesmo que a rede da OpenAI esteja sobrecarregada.
