@@ -4,7 +4,7 @@
 
 ## [2. Como realizar novo Pix no iti](#como-realizar-novo-Pix-no-iti)
 
-## [3. API Documentation](#api-documentation)
+## [3. ](#)
 
 -------
 
@@ -57,48 +57,48 @@ Este tutorial contém as informações necessárias para você realizar uma tran
 
 1. Clique em **entrar**;
 
-![tela inicial](https://github.com/tiannamen/squad_doc/blob/main/images/01_tela_inicial.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/01_tela_inicial.jpg" alt="tela inicial" width="150">
 
 2. Digite seu CPF;
 
-![login cpf](https://github.com/tiannamen/squad_doc/blob/main/images/02_login_cpf.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/02_login_cpf.jpg" alt="login cpf" width="150">
 
 3. Digite sua senha e clique em **entrar**;
 
-![login senha](https://github.com/tiannamen/squad_doc/blob/main/images/03_login_senha.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/03_login_senha.jpg" alt="login senha" width="150">
 
 4. Selecione a opção **Pix**.
 
-![opcao pix](https://github.com/tiannamen/squad_doc/blob/main/images/04_opcao_pix.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/04_opcao_pix.jpg" alt="opcao pix" width="150">
 
 ## Realize um novo Pix
 
 1. Clique na opção **transferir**;
 
-![transferir](https://github.com/tiannamen/squad_doc/blob/main/images/05_transferir.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/05_transferir.jpg" alt="transferir" width="150">
 
 2. Clique em **fazer novo Pix**;
 
-![novo pix](https://github.com/tiannamen/squad_doc/blob/main/images/06_novo_pix.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/06_novo_pix.jpg" alt="novo pix" width="150">
 
 3. Digite a chave Pix para a qual deseja fazer a transferência e clique em **transferir**;
 
-![chave pix](https://github.com/tiannamen/squad_doc/blob/main/images/07_chave_pix.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/07_chave_pix.jpg" alt="chave pix" width="150">
 
 4. Digite o valor que deseja transferir e clique em **continuar**;
 > Obs: para visualizar o saldo da sua conta, habilite a opção **visualizar**, à direita da tela.
 
-![valor pix](https://github.com/tiannamen/squad_doc/blob/main/images/08_valor_pix.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/08_valor_pix.jpg" alt="valor pix" width="150">
 
 5. Confirme os dados do pagamento e clique em **pagar**;
 > Obs: caso deseje realizar outras transferências para esse mesmo contato no futuro, sem precisar digitar a chave Pix novamente, salve esse contato habilitando a opção **Salvar contato**.
 
-![dados pix](https://github.com/tiannamen/squad_doc/blob/main/images/09_dados_pix.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/09_dados_pix.jpg" alt="dados pix" width="150">
 
 6. Digite sua senha para confirmar a transferência;
 
-![senha](https://github.com/tiannamen/squad_doc/blob/main/images/10_senha_pix.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/10_senha_pix.jpg" alt="senha" width="150">
 
 7. Pronto! Sua transferência foi realizada. Clique em **ver comprovante** para conferir os dados da transação.
 
-![comprovante](https://github.com/tiannamen/squad_doc/blob/main/images/11_ver_comprovante.jpg)
+<img src="https://github.com/tiannamen/squad_doc/blob/main/images/11_ver_comprovante.jpg" alt="comprovante" width="150">
