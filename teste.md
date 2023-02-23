@@ -2,9 +2,19 @@
 
 ## [1. Compromised AWS Account Credentials](#compromised-aws-account-credentials)
 
-## [2. Como realizar novo Pix no iti](#como-realizar-novo-Pix-no-iti)
+## [2. Como fazer um novo Pix no iti](#como-fazer-um-novo-Pix-no-iti)
 
-## [3. ](#)
+### [2.1. Pré-requisitos](#pr%C3%A9-requisitos)
+
+### [2.2. Abra o aplicativo](#abra-o-aplicativo)
+
+### [2.3. Faça um novo Pix](#fa%C3%A7a-um-novo-pix)
+
+## [3. Como utilizar o ChatGPT via Python](#como-utilizar-o-chatgpt-via-python)
+
+### [3.1. Pré-requisitos](#pr%C3%A9-requisitos-1)
+
+### [3.2. Utilizando o script](#utilizando-o-script)
 
 -------
 
@@ -44,7 +54,7 @@ Refer to the [AWS Java Developer Guide](https://docs.aws.amazon.com/sdk-for-java
 
 ------
 
-# Como realizar novo Pix no iti
+# Como fazer um novo Pix no iti
 
 Este tutorial contém as informações necessárias para você realizar uma transferência via Pix, para uma chave não cadastrada, no aplicativo do banco iti.
 
@@ -71,7 +81,7 @@ Este tutorial contém as informações necessárias para você realizar uma tran
 
 <img src="https://github.com/tiannamen/squad_doc/blob/main/images/04_opcao_pix.jpg" alt="opcao pix" width="150">
 
-## Realize um novo Pix
+## Faça um novo Pix
 
 1. Clique na opção **transferir**;
 
@@ -102,3 +112,49 @@ Este tutorial contém as informações necessárias para você realizar uma tran
 7. Pronto! Sua transferência foi realizada. Clique em **ver comprovante** para conferir os dados da transação.
 
 <img src="https://github.com/tiannamen/squad_doc/blob/main/images/11_ver_comprovante.jpg" alt="comprovante" width="150">
+
+----------
+
+# Como utilizar o ChatGPT via Python
+
+Este tutorial vai te guiar nos passos necessários para utilizar o ChatGPT via script em Python. Isso possibilita a utilização da ferramenta mesmo que o sistema da OpenAI não esteja funcionando por excesso de usuários.
+
+## Pré-requisitos
+
+* Python 3.8 ou acima - caso não possua, realize o [download no site python.org](https://www.python.org/downloads/release/python-3112/). Em caso de dúvidas, consulte a [documentação disponível](https://docs.python.org/).
+* API Key do ChatGPT - crie sua API Key no [site da OpenAI](https://platform.openai.com/account/api-keys).
+
+## Utilizando o script
+
+Agora que você já possui o Python em versão 3.8 ou superior, é possível utilizar o ChatGPT diretamente no seu terminal de comando, através de um simples script. Veja o tutorial abaixo para executar o script corretamente. 
+
+> Para testar o correto funcionamento do Python, execute o comando: ```python --version```. 
+Se a instalação foi bem sucedida, esse comando deverá retornar a versão do Python. 
+
+1. Abra o prompt de comando (CMD) do seu computador e execute o seguinte comando para instalar o gerenciador de pacotes do Python (pip):
+
+```winget install --id=lencx.ChatGPT -e```
+
+2. Crie um novo arquivo com a extensão .py e cole o seguinte script:
+
+```import openai
+
+API_KEY = "API Key"
+
+# Set the API key
+openai.api_key = API_KEY
+
+# Use the ChatGPT model to generate text
+model_engine = "text-davinci-002"
+while (True):
+    question = input("Question: ")
+    prompt = question
+    completion = openai.Completion.create(engine=model_engine, prompt=prompt, max_tokens=1024, n=1,stop=None,temperature=0.7)
+    message = completion.choices[0].text
+    print("ChatGPT: " + message + "\n")
+ ```
+
+4. Substitua "API Key" pelas informações da sua API Key gerada no site da OpenAI [(veja os pré-requisitos)](#pré-requisitos);
+5. Salve o arquivo com o nome de sua escolha e com a extensão .py - exemplo (chatgpt.py);
+6. No seu terminal (git bash ou cmd), navegue até o local onde o arquivo foi salvo (utilize o comando `cd`) e execute o comando: ```python nome do arquivo.py``` - exemplo ```python chatgpt.py```. Ao executar esse comando, aparecerá a opção de digitar sua pergunta no próprio terminal, e a resposta aparecerá logo em seguida
+7. Pronto! Agora você pode utilizar as funcionalidades do ChatGPT, mesmo que a rede da OpenAI esteja sobrecarregada.
